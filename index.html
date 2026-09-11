@@ -5,6 +5,7 @@
     <meta  name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Profesional | Desarrollo FullStack II</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -49,24 +50,30 @@
         </section>
     <section id="sobre-mi" class="content-section">
         <h2>Sobre mí</h2>
-        <p>Actualmente me encuentro cursando el 3er año de Ingeniería en Informática con mencion en Ciencia de Datos en DuocUC.
-            por el momento me encuentro en la busqueda de oportunidades laborales para poder aplicar mis conocimientos y 
-            seguir aprendiendo en el mundo del desarrollo de software.
+        <p>
+            Actualmente me encuentro cursando el 3er año de Ingeniería en Informática con mención en Ciencia de Datos en DuocUC.
+            Me interesa el desarrollo de software y cómo los datos ayudan a tomar mejores decisiones.
+            Por el momento me encuentro en la búsqueda de oportunidades laborales para poder aplicar mis conocimientos,
+            seguir aprendiendo en el mundo del desarrollo de software y aportar con compromiso y trabajo en equipo.
         </p>
     </section>
     <section id="habilidades" class="content-section">
         <h2>Habilidades</h2>
         <ul>
-            <li>Programación en Python, Java y</li>
+            <li>Programación en Python, Java</li>
+            <li>Desarrollo web con HTML, CSS, JavaScript</li>
             <li>Base de datos (MySQL, SQL)</li>
-            <li>Control de versiones con Git</li>
+            <li>Spring Boot y microservicios</li>
+            <li>Control de versiones con Git y GitHub</li>
+            <li>Análisis de datos con Python</li>
             <li>Trabajo en equipo y comunicación efectiva</li>
+            <li>Resolución de problemas y aprendizaje continuo</li>
         </ul>
     </section>
     <section id="proyectos" class="content-section">
         <h2>Proyectos</h2><h3>Proyectos realizados durante el desarrollo de la carrera</h3>
         <div class="proyectos">
-            <div class="proyecto">
+            <article class="proyecto">
                 <h3>VETTsafe</h3>
                 <figure>
                     <img src="img/icon.ico" alt="Imagen del proyecto VETTsafe">
@@ -78,8 +85,8 @@
                     En las ramas estan los avances personales de cada integrante del grupo, y en la rama main se encuentra el proyecto final.
                 </p>
                 <a href="https://github.com/francisxo999/Proyecto-Semestral" target="_blank" class="proyecto-link">Ver rama del proyecto</a>
-            </div>
-            <div class="proyecto">
+            </article>
+            <article class="proyecto">
                 <h3>Evaluación 3 - Desarrollo Fullstack</h3>
                 <figure>
                     <img src="img/ev3.png" alt="Imagen del proyecto Evaluación 3 - Desarrollo Fullstack">
@@ -90,7 +97,7 @@
                     trabajado mediante control de versiones con Git y GitHub.
                 </p>
                 <a href="https://github.com/Catal2s/ev3-DSY1103/tree/javier/Evaluacion3-Desarrollo-Fullstack-I_004V-javier-cataldo" target="_blank" class="proyecto-link">Ver rama del proyecto</a> 
-            </div>
+            </article>
         </div>
     </section>
     <section id="contacto" class="grey-section">
@@ -98,7 +105,25 @@
             <h2>Contacto</h2>
             <p>Si deseas conocer más sobre mi trabajo realizados hasta el dia de hoy, puedes visitar mi perfil en GitHub.</p>
             <a href="https://github.com/Catal2s" target="_blank" class="github-link">Ver perfil en GitHub</a>
-            <!--Formulario - Pendiente-->
+            <form id="form-contacto" action="https://formsubmit.co/catalduos@gmail.com" method="POST" novalidate>
+                <div class="form-grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                    <span class="error" id="error-nombre"></span>
+                </div>
+                <div class="form-grupo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                    <span class="error" id="error-email"></span>
+                </div>
+                <div class="form-grupo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ingrese su mensaje" required></textarea>
+                    <span class="error" id="error-mensaje"></span>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                <p class="exito" id="form-exito"></p>
+            </form>
         </div>
     </section>
     <footer>
