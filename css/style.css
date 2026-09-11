@@ -20,13 +20,7 @@ body{
     --blanco: #ffffff;
     --radio: 12px;
 }
-/*Selectores de css
-elemeto -> p 
-clase -> .card
-id -> #mensaje
-desendiente -> .nav a
-pseudo-clase -> :hover (Sucede cndo una yo me posiciono sobre un elemnto y cambia de color.)
-*/
+
 h1,h2,h3{
     line-height: 1.2;
 }
